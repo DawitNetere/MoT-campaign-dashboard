@@ -1,12 +1,5 @@
 import jsPDF from "jspdf";
-import "jspdf-autotable";
-
-declare module "jspdf" {
-  interface jsPDF {
-    autoTable: (options: any) => jsPDF;
-    lastAutoTable: { finalY: number };
-  }
-}
+import autoTable from "jspdf-autotable";
 
 export function generateQ1Report() {
   const doc = new jsPDF();
@@ -14,7 +7,7 @@ export function generateQ1Report() {
   let y = 20;
 
   // Header
-  doc.setFillColor(30, 41, 59); // slate-800
+  doc.setFillColor(30, 41, 59);
   doc.rect(0, 0, pageWidth, 40, "F");
   doc.setTextColor(255, 255, 255);
   doc.setFontSize(20);
@@ -48,7 +41,7 @@ export function generateQ1Report() {
   doc.text("Key Performance Indicators", 14, y);
   y += 4;
 
-  doc.autoTable({
+  autoTable(doc, {
     startY: y,
     head: [["Metric", "Q1 2026", "Q4 2025", "Change"]],
     body: [
@@ -67,7 +60,7 @@ export function generateQ1Report() {
     margin: { left: 14, right: 14 },
   });
 
-  y = doc.lastAutoTable.finalY + 12;
+  y = (doc as any).lastAutoTable.finalY + 12;
 
   // Platform Breakdown
   doc.setFontSize(14);
@@ -76,7 +69,7 @@ export function generateQ1Report() {
   doc.text("Platform Breakdown", 14, y);
   y += 4;
 
-  doc.autoTable({
+  autoTable(doc, {
     startY: y,
     head: [["Platform", "Posts", "Reach", "Engagement", "Followers Gained", "Top Content"]],
     body: [
@@ -94,7 +87,7 @@ export function generateQ1Report() {
     columnStyles: { 5: { cellWidth: 40 } },
   });
 
-  y = doc.lastAutoTable.finalY + 12;
+  y = (doc as any).lastAutoTable.finalY + 12;
 
   // Top Campaigns
   doc.setFontSize(14);
@@ -103,7 +96,7 @@ export function generateQ1Report() {
   doc.text("Top Performing Campaigns", 14, y);
   y += 4;
 
-  doc.autoTable({
+  autoTable(doc, {
     startY: y,
     head: [["Campaign", "Platform", "Reach", "Eng. Rate", "Conversions", "Cost (ETB)", "CPA (ETB)"]],
     body: [
@@ -132,7 +125,7 @@ export function generateQ1Report() {
   doc.text("Budget Utilization Summary", 14, y);
   y += 4;
 
-  doc.autoTable({
+  autoTable(doc, {
     startY: y,
     head: [["Category", "Allocated (ETB)", "Spent (ETB)", "Remaining (ETB)", "Utilization"]],
     body: [
@@ -149,7 +142,7 @@ export function generateQ1Report() {
     margin: { left: 14, right: 14 },
   });
 
-  y = doc.lastAutoTable.finalY + 12;
+  y = (doc as any).lastAutoTable.finalY + 12;
 
   // Audience Demographics
   doc.setFontSize(14);
@@ -157,7 +150,7 @@ export function generateQ1Report() {
   doc.text("Audience Demographics", 14, y);
   y += 4;
 
-  doc.autoTable({
+  autoTable(doc, {
     startY: y,
     head: [["Segment", "Percentage", "Growth vs Q4", "Primary Platform"]],
     body: [
@@ -174,7 +167,7 @@ export function generateQ1Report() {
     margin: { left: 14, right: 14 },
   });
 
-  y = doc.lastAutoTable.finalY + 12;
+  y = (doc as any).lastAutoTable.finalY + 12;
 
   // Recommendations
   doc.setFontSize(14);
