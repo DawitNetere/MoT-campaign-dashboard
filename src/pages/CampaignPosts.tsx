@@ -3,6 +3,12 @@ import DashboardHeader from "@/components/DashboardHeader";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import postCoffee from "@/assets/post-coffee.jpg";
+import postTradefair from "@/assets/post-tradefair.jpg";
+import postShoes from "@/assets/post-shoes.jpg";
+import postPolicy from "@/assets/post-policy.jpg";
+import postWomen from "@/assets/post-women.jpg";
+import postNewsletter from "@/assets/post-newsletter.jpg";
 
 const posts = [
   {
@@ -13,7 +19,7 @@ const posts = [
     date: "Feb 18, 2026",
     reach: "12.4K",
     engagement: "3.2%",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBNpAuZTBEVSJGGF_G29_O08BM64xvDTZBdUb1xYBxMiCm_WT0JLYT4Sk6_gOHxpLHB0p9u9dFpnXdHOQj7nBJLHsELdw",
+    image: postCoffee,
   },
   {
     id: 2,
@@ -23,7 +29,7 @@ const posts = [
     date: "Feb 22, 2026",
     reach: "—",
     engagement: "—",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDGOAO2m-N8bQ3I6k83HlvhLT0w29SZiJSvYHt0C4PNhPBB98RIU2ypxL6gRWvRXdVxqHXLJ8YMxZ9bPxdvBtNP_pSWJw",
+    image: postTradefair,
   },
   {
     id: 3,
@@ -33,7 +39,7 @@ const posts = [
     date: "Feb 15, 2026",
     reach: "8.7K",
     engagement: "4.1%",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA3mU_vxejwv5ahW4s_JjJ1-soBHYlqtpZtyDDKu2sg4Da-eNMIxvBCXMzdtnLQxUanzxcYbN1ok88AO3AAAwUyzd1DqRDZ4SEumq-G41n1ya9wbSnUZiKO8uq3lzjJqXj9-uP1qtPZ0o-DiPvyyR776jlULQQ4khWcWqaaNfy0qQmaDOKR0J0JnmrKTYGYlAxVWWxIGITrI4diSZfTi8zWYCDQPfrgLgCAzWDLo0sUPCWe9gmRayCHenUYjpFeLVEcqle-iGkN3HE",
+    image: postShoes,
   },
   {
     id: 4,
@@ -43,7 +49,7 @@ const posts = [
     date: "—",
     reach: "—",
     engagement: "—",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuChEPgbNJks0-ROM1YYnriMkU8uMAxx2zkg8NwrGpF1H1uPui8ihhueS8QzqbsvoZ4efeQj0aRH6dayOzNSiNlKT0_XTnnlqgJNi3RnO7E_5V1yUJ77PpFkWwPct4NhpgqRw9jIHk1DVz-zC8ThRB6BqERhVUmTB-I2TRsqGURT4LYXZll4S11IzlHLCTHWlN53bz9ObrErdJydsFM28nRxqsxL2qU0iPKevXGnP0Me_8NOHMKvSemEz2s6BICv_dt76clVT-biQl8",
+    image: postPolicy,
   },
   {
     id: 5,
@@ -53,7 +59,7 @@ const posts = [
     date: "Feb 12, 2026",
     reach: "15.1K",
     engagement: "5.8%",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBNpAuZTBEVSJGGF_G29_O08BM64xvDTZBdUb1xYBxMiCm_WT0JLYT4Sk6_gOHxpLHB0p9u9dFpnXdHOQj7nBJLHsELdw",
+    image: postWomen,
   },
   {
     id: 6,
@@ -63,7 +69,7 @@ const posts = [
     date: "Feb 25, 2026",
     reach: "—",
     engagement: "—",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDGOAO2m-N8bQ3I6k83HlvhLT0w29SZiJSvYHt0C4PNhPBB98RIU2ypxL6gRWvRXdVxqHXLJ8YMxZ9bPxdvBtNP_pSWJw",
+    image: postNewsletter,
   },
 ];
 
