@@ -2,7 +2,9 @@ const DashboardHeader = () => {
   return (
     <header className="flex items-center justify-between px-8 py-5 border-b border-border bg-background/95 backdrop-blur z-10 shrink-0">
       <div>
-        <h2 className="text-foreground text-xl font-bold tracking-tight">Campaign Command Center</h2>
+        <h2 className="text-foreground text-xl font-bold tracking-tight">
+AACCSA Digital Boosting
+        </h2>
         <p className="text-muted-foreground text-sm">Multi-platform live campaign dashboard
         </p>
       </div>
@@ -27,7 +29,5 @@ const DashboardHeader = () => {
           <span className="material-symbols-outlined text-[20px]">notifications</span>
         </button>
       </div>
-    </header>);
-};
-
+    </header>);};
 export default DashboardHeader;
