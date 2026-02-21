@@ -17,7 +17,7 @@ const bottomItems = [
   { icon: "logout", label: "Log Out", path: "#" },
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ onNavigate }: { onNavigate?: () => void }) => {
   const location = useLocation();
 
   return (
@@ -43,6 +43,7 @@ const Sidebar = () => {
             end={item.path === "/"}
             className="flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors text-muted-foreground hover:bg-card hover:text-foreground"
             activeClassName="bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground"
+            onClick={onNavigate}
           >
             <span className="material-symbols-outlined text-[20px]">{item.icon}</span>
             <span className="text-sm font-medium">{item.label}</span>
@@ -67,13 +68,14 @@ const Sidebar = () => {
               to={item.path}
               className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-muted-foreground hover:bg-card hover:text-foreground transition-colors"
               activeClassName="bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground"
+              onClick={onNavigate}
             >
               <span className="material-symbols-outlined text-[20px]">{item.icon}</span>
               <span className="text-sm font-medium">{item.label}</span>
             </NavLink>
           )
         )}
-        <NavLink to="/profile" className="mt-4 flex items-center gap-3 px-3 rounded-lg hover:bg-card transition-colors py-2" activeClassName="bg-card">
+        <NavLink to="/profile" onClick={onNavigate} className="mt-4 flex items-center gap-3 px-3 rounded-lg hover:bg-card transition-colors py-2" activeClassName="bg-card">
           <div
             className="bg-center bg-no-repeat bg-cover rounded-full size-8 border border-border"
             style={{
