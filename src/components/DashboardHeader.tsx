@@ -3,7 +3,8 @@ const DashboardHeader = () => {
     <header className="flex items-center justify-between px-8 py-5 border-b border-border bg-background/95 backdrop-blur z-10 shrink-0">
       <div>
         <h2 className="text-foreground text-xl font-bold tracking-tight">Campaign Command Center</h2>
-        <p className="text-muted-foreground text-sm">Real-time performance overview</p>
+        <p className="text-muted-foreground text-sm">multi-platform live campaign dashboard
+        </p>
       </div>
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2 bg-card border border-border rounded-lg p-1 pr-3">
@@ -26,8 +27,7 @@ const DashboardHeader = () => {
           <span className="material-symbols-outlined text-[20px]">notifications</span>
         </button>
       </div>
-    </header>
-  );
+    </header>);
 };
 
 export default DashboardHeader;
