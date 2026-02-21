@@ -4,6 +4,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import CampaignPosts from "./pages/CampaignPosts";
+import PlatformAnalytics from "./pages/PlatformAnalytics";
+import AudienceInsights from "./pages/AudienceInsights";
+import BudgetSpend from "./pages/BudgetSpend";
+import ReportsExport from "./pages/ReportsExport";
+import TrainingLog from "./pages/TrainingLog";
+import Settings from "./pages/Settings";
+import UserProfile from "./pages/UserProfile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -16,7 +24,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/campaigns" element={<CampaignPosts />} />
+          <Route path="/analytics" element={<PlatformAnalytics />} />
+          <Route path="/audience" element={<AudienceInsights />} />
+          <Route path="/budget" element={<BudgetSpend />} />
+          <Route path="/reports" element={<ReportsExport />} />
+          <Route path="/training" element={<TrainingLog />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/profile" element={<UserProfile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
