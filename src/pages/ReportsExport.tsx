@@ -2,6 +2,7 @@ import AppLayout from "@/components/AppLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { generateQ1Report } from "@/lib/generateReport";
 
 const reports = [
   { name: "Q1 2026 Campaign Performance", type: "PDF", size: "2.4 MB", date: "Feb 15, 2026", status: "Ready" },
@@ -44,7 +45,7 @@ const ReportsExport = () => (
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
                   <Badge variant={r.status === "Ready" ? "default" : "secondary"} className="text-[10px]">{r.status}</Badge>
-                  <Button variant="ghost" size="sm" disabled={r.status !== "Ready"}>
+                  <Button variant="ghost" size="sm" disabled={r.status !== "Ready"} onClick={() => r.name.includes("Q1") ? generateQ1Report() : alert("Only Q1 report has sample data")}>
                     <span className="material-symbols-outlined text-[16px]">download</span>
                   </Button>
                 </div>
