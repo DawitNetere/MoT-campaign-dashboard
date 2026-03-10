@@ -80,7 +80,7 @@ const Settings = () => (
             </div>
           ))}
           <Separator />
-          <p className="text-[11px] text-muted-foreground">Need help connecting? Contact support@aaccsa.org.et</p>
+          <p className="text-[11px] text-muted-foreground">Need help connecting? Contact support@mot.gov.et</p>
         </CardContent>
       </Card>
 

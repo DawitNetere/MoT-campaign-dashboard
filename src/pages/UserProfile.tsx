@@ -43,7 +43,7 @@ const UserProfile = () => (
           <CardContent className="space-y-3">
             {[
               { label: "Full Name", value: "Admin User" },
-              { label: "Email", value: "admin@aaccsa.org.et" },
+              { label: "Email", value: "admin@mot.gov.et" },
               { label: "Phone", value: "+251 911 234 567" },
               { label: "Department", value: "Marketing & Communications" },
               { label: "Joined", value: "September 2024" },
