@@ -201,8 +201,8 @@ export function generateQ1Report() {
   y += 8;
   doc.setFontSize(8);
   doc.setTextColor(148, 163, 184);
-  doc.text("AACCSA Digital Marketing Division  |  Confidential — For Internal Use Only", 14, y);
-  doc.text("Contact: marketing@aaccsa.org  |  +251 11 551 8055", 14, y + 5);
+  doc.text("Ministry of Tourism Digital Marketing Division  |  Confidential — For Internal Use Only", 14, y);
+  doc.text("Contact: marketing@mot.gov.et  |  +251 11 551 8055", 14, y + 5);
 
-  doc.save("AACCSA_Q1_2026_Campaign_Performance.pdf");
+  doc.save("MoT_Q1_2026_Campaign_Performance.pdf");
 }

@@ -8,7 +8,7 @@ const DashboardHeader = ({ onMenuClick }: { onMenuClick?: () => void }) => {
           </button>
         )}
         <div>
-          <h2 className="text-foreground text-lg md:text-xl font-bold tracking-tight">AACCSA Digital Boosting</h2>
+          <h2 className="text-foreground text-lg md:text-xl font-bold tracking-tight">Ministry of Tourism Digital Boosting</h2>
           <p className="text-muted-foreground text-xs md:text-sm hidden sm:block">Multi-platform live campaign dashboard</p>
         </div>
       </div>

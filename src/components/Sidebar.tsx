@@ -84,7 +84,7 @@ const Sidebar = ({ onNavigate }: { onNavigate?: () => void }) => {
           />
           <div className="flex flex-col">
             <p className="text-foreground text-xs font-semibold">Admin User</p>
-            <p className="text-muted-foreground text-[10px]">admin@aaccsa.org.et</p>
+            <p className="text-muted-foreground text-[10px]">admin@mot.gov.et</p>
           </div>
         </NavLink>
       </div>
