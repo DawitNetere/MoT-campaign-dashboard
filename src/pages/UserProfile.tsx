@@ -26,7 +26,7 @@ const UserProfile = () => (
             />
             <div className="flex-1 text-center sm:text-left">
               <h2 className="text-lg font-bold">Admin User</h2>
-              <p className="text-sm text-muted-foreground">admin@aaccsa.org.et</p>
+              <p className="text-sm text-muted-foreground">admin@mot.gov.et</p>
               <div className="flex items-center justify-center sm:justify-start gap-2 mt-2">
                 <Badge className="text-[10px]">Administrator</Badge>
                 <Badge variant="secondary" className="text-[10px]">Active</Badge>
