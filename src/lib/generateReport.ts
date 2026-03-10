@@ -12,7 +12,7 @@ export function generateQ1Report() {
   doc.setTextColor(255, 255, 255);
   doc.setFontSize(20);
   doc.setFont("helvetica", "bold");
-  doc.text("AACCSA — Q1 2026 Campaign Performance", 14, 18);
+  doc.text("Ministry of Tourism — Q1 2026 Campaign Performance", 14, 18);
   doc.setFontSize(10);
   doc.setFont("helvetica", "normal");
   doc.text("Addis Ababa Chamber of Commerce & Sectoral Associations", 14, 26);
