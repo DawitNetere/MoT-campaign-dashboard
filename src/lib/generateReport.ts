@@ -15,7 +15,7 @@ export function generateQ1Report() {
   doc.text("Ministry of Tourism — Q1 2026 Campaign Performance", 14, 18);
   doc.setFontSize(10);
   doc.setFont("helvetica", "normal");
-  doc.text("Addis Ababa Chamber of Commerce & Sectoral Associations", 14, 26);
+  doc.text("Ministry of Tourism — Federal Democratic Republic of Ethiopia", 14, 26);
   doc.text("Report generated: February 15, 2026  |  Period: Jan 1 – Mar 31, 2026", 14, 33);
 
   y = 50;
