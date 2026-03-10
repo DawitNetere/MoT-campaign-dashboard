@@ -26,7 +26,7 @@ const UserProfile = () => (
             />
             <div className="flex-1 text-center sm:text-left">
               <h2 className="text-lg font-bold">Admin User</h2>
-              <p className="text-sm text-muted-foreground">admin@aaccsa.org.et</p>
+              <p className="text-sm text-muted-foreground">admin@mot.gov.et</p>
               <div className="flex items-center justify-center sm:justify-start gap-2 mt-2">
                 <Badge className="text-[10px]">Administrator</Badge>
                 <Badge variant="secondary" className="text-[10px]">Active</Badge>
@@ -43,7 +43,7 @@ const UserProfile = () => (
           <CardContent className="space-y-3">
             {[
               { label: "Full Name", value: "Admin User" },
-              { label: "Email", value: "admin@aaccsa.org.et" },
+              { label: "Email", value: "admin@mot.gov.et" },
               { label: "Phone", value: "+251 911 234 567" },
               { label: "Department", value: "Marketing & Communications" },
               { label: "Joined", value: "September 2024" },

@@ -26,11 +26,11 @@ const Settings = () => (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="text-xs text-muted-foreground">Organization Name</label>
-              <p className="text-sm font-medium mt-0.5">AACCSA</p>
+              <p className="text-sm font-medium mt-0.5">Ministry of Tourism</p>
             </div>
             <div>
               <label className="text-xs text-muted-foreground">Domain</label>
-              <p className="text-sm font-medium mt-0.5">aaccsa.org.et</p>
+              <p className="text-sm font-medium mt-0.5">mot.gov.et</p>
             </div>
             <div>
               <label className="text-xs text-muted-foreground">Industry</label>
@@ -80,7 +80,7 @@ const Settings = () => (
             </div>
           ))}
           <Separator />
-          <p className="text-[11px] text-muted-foreground">Need help connecting? Contact support@aaccsa.org.et</p>
+          <p className="text-[11px] text-muted-foreground">Need help connecting? Contact support@mot.gov.et</p>
         </CardContent>
       </Card>
 

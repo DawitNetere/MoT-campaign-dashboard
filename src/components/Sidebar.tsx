@@ -30,7 +30,7 @@ const Sidebar = ({ onNavigate }: { onNavigate?: () => void }) => {
           }}
         />
         <div className="flex flex-col overflow-hidden">
-          <h1 className="text-foreground text-base font-bold leading-tight truncate">AACCSA</h1>
+          <h1 className="text-foreground text-base font-bold leading-tight truncate">Ministry of Tourism</h1>
           <p className="text-muted-foreground text-xs font-medium leading-normal truncate">Ad Management</p>
         </div>
       </div>
@@ -84,7 +84,7 @@ const Sidebar = ({ onNavigate }: { onNavigate?: () => void }) => {
           />
           <div className="flex flex-col">
             <p className="text-foreground text-xs font-semibold">Admin User</p>
-            <p className="text-muted-foreground text-[10px]">admin@aaccsa.org.et</p>
+            <p className="text-muted-foreground text-[10px]">admin@mot.gov.et</p>
           </div>
         </NavLink>
       </div>

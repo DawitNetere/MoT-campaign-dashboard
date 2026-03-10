@@ -12,10 +12,10 @@ export function generateQ1Report() {
   doc.setTextColor(255, 255, 255);
   doc.setFontSize(20);
   doc.setFont("helvetica", "bold");
-  doc.text("AACCSA — Q1 2026 Campaign Performance", 14, 18);
+  doc.text("Ministry of Tourism — Q1 2026 Campaign Performance", 14, 18);
   doc.setFontSize(10);
   doc.setFont("helvetica", "normal");
-  doc.text("Addis Ababa Chamber of Commerce & Sectoral Associations", 14, 26);
+  doc.text("Ministry of Tourism — Federal Democratic Republic of Ethiopia", 14, 26);
   doc.text("Report generated: February 15, 2026  |  Period: Jan 1 – Mar 31, 2026", 14, 33);
 
   y = 50;
@@ -29,7 +29,7 @@ export function generateQ1Report() {
   doc.setFontSize(9);
   doc.setFont("helvetica", "normal");
   doc.setTextColor(71, 85, 105);
-  const summary = `This report provides a comprehensive overview of AACCSA's digital marketing performance during Q1 2026. Overall engagement grew 23.4% compared to Q4 2025, driven primarily by the Ethiopian Coffee Week campaign and increased Telegram activity. Total reach across all platforms exceeded 1.2 million impressions, with a blended engagement rate of 4.7%. Budget utilization stands at 68% of the quarterly allocation, on track for full deployment by quarter-end.`;
+  const summary = `This report provides a comprehensive overview of the Ministry of Tourism's digital marketing performance during Q1 2026. Overall engagement grew 23.4% compared to Q4 2025, driven primarily by the Ethiopian Coffee Week campaign and increased Telegram activity. Total reach across all platforms exceeded 1.2 million impressions, with a blended engagement rate of 4.7%. Budget utilization stands at 68% of the quarterly allocation, on track for full deployment by quarter-end.`;
   const lines = doc.splitTextToSize(summary, pageWidth - 28);
   doc.text(lines, 14, y);
   y += lines.length * 4.5 + 6;
@@ -201,8 +201,8 @@ export function generateQ1Report() {
   y += 8;
   doc.setFontSize(8);
   doc.setTextColor(148, 163, 184);
-  doc.text("AACCSA Digital Marketing Division  |  Confidential — For Internal Use Only", 14, y);
-  doc.text("Contact: marketing@aaccsa.org  |  +251 11 551 8055", 14, y + 5);
+  doc.text("Ministry of Tourism Digital Marketing Division  |  Confidential — For Internal Use Only", 14, y);
+  doc.text("Contact: marketing@mot.gov.et  |  +251 11 551 8055", 14, y + 5);
 
-  doc.save("AACCSA_Q1_2026_Campaign_Performance.pdf");
+  doc.save("MoT_Q1_2026_Campaign_Performance.pdf");
 }
