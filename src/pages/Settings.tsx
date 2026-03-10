@@ -30,7 +30,7 @@ const Settings = () => (
             </div>
             <div>
               <label className="text-xs text-muted-foreground">Domain</label>
-              <p className="text-sm font-medium mt-0.5">aaccsa.org.et</p>
+              <p className="text-sm font-medium mt-0.5">mot.gov.et</p>
             </div>
             <div>
               <label className="text-xs text-muted-foreground">Industry</label>
