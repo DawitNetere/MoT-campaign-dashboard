@@ -29,7 +29,7 @@ export function generateQ1Report() {
   doc.setFontSize(9);
   doc.setFont("helvetica", "normal");
   doc.setTextColor(71, 85, 105);
-  const summary = `This report provides a comprehensive overview of AACCSA's digital marketing performance during Q1 2026. Overall engagement grew 23.4% compared to Q4 2025, driven primarily by the Ethiopian Coffee Week campaign and increased Telegram activity. Total reach across all platforms exceeded 1.2 million impressions, with a blended engagement rate of 4.7%. Budget utilization stands at 68% of the quarterly allocation, on track for full deployment by quarter-end.`;
+  const summary = `This report provides a comprehensive overview of the Ministry of Tourism's digital marketing performance during Q1 2026. Overall engagement grew 23.4% compared to Q4 2025, driven primarily by the Ethiopian Coffee Week campaign and increased Telegram activity. Total reach across all platforms exceeded 1.2 million impressions, with a blended engagement rate of 4.7%. Budget utilization stands at 68% of the quarterly allocation, on track for full deployment by quarter-end.`;
   const lines = doc.splitTextToSize(summary, pageWidth - 28);
   doc.text(lines, 14, y);
   y += lines.length * 4.5 + 6;
