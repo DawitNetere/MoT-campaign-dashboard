@@ -6,11 +6,11 @@ import { generateQ1Report } from "@/lib/generateReport";
 
 const reports = [
   { name: "Q1 2026 Campaign Performance", type: "PDF", size: "2.4 MB", date: "Feb 15, 2026", status: "Ready" },
-  { name: "Social Media Audit — January", type: "XLSX", size: "1.1 MB", date: "Feb 01, 2026", status: "Ready" },
-  { name: "Audience Growth Report", type: "PDF", size: "3.8 MB", date: "Jan 28, 2026", status: "Ready" },
-  { name: "Budget Utilization Summary", type: "CSV", size: "420 KB", date: "Jan 25, 2026", status: "Ready" },
-  { name: "Weekly Digest — Week 7", type: "PDF", size: "1.6 MB", date: "Feb 17, 2026", status: "Generating" },
-  { name: "Platform Comparison H2 2025", type: "PPTX", size: "5.2 MB", date: "Jan 10, 2026", status: "Ready" },
+  { name: "Social Media Audit — January", type: "XLSX", size: "1.1 MB", date: "Feb 01, 2026", status: "Coming Soon" },
+  { name: "Audience Growth Report", type: "PDF", size: "3.8 MB", date: "Jan 28, 2026", status: "Coming Soon" },
+  { name: "Budget Utilization Summary", type: "CSV", size: "420 KB", date: "Jan 25, 2026", status: "Coming Soon" },
+  { name: "Weekly Digest — Week 7", type: "PDF", size: "1.6 MB", date: "Feb 17, 2026", status: "Coming Soon" },
+  { name: "Platform Comparison H2 2025", type: "PPTX", size: "5.2 MB", date: "Jan 10, 2026", status: "Coming Soon" },
 ];
 
 const scheduled = [
@@ -45,7 +45,7 @@ const ReportsExport = () => (
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
                   <Badge variant={r.status === "Ready" ? "default" : "secondary"} className="text-[10px]">{r.status}</Badge>
-                  <Button variant="ghost" size="sm" disabled={r.status !== "Ready"} onClick={() => r.name.includes("Q1") ? generateQ1Report() : alert("Only Q1 report has sample data")}>
+                  <Button variant="ghost" size="sm" disabled={r.status !== "Ready"} onClick={() => r.name.includes("Q1") ? generateQ1Report() : undefined}>
                     <span className="material-symbols-outlined text-[16px]">download</span>
                   </Button>
                 </div>
