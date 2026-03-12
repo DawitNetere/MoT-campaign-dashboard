@@ -20,12 +20,12 @@ const locations = [
 ];
 
 const interests = [
-  { topic: "Trade & Commerce", pct: 42 },
-  { topic: "Manufacturing", pct: 28 },
-  { topic: "Agriculture & Export", pct: 19 },
+  { topic: "Tourism & Hospitality", pct: 42 },
+  { topic: "Heritage & Culture", pct: 28 },
+  { topic: "Eco-Tourism & Nature", pct: 19 },
   { topic: "Technology", pct: 31 },
-  { topic: "Finance & Banking", pct: 24 },
-  { topic: "Real Estate", pct: 15 },
+  { topic: "Travel & Adventure", pct: 24 },
+  { topic: "Food & Gastronomy", pct: 15 },
 ];
 
 const recentFollowers = [

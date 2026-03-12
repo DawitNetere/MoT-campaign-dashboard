@@ -34,7 +34,7 @@ const Settings = () => (
             </div>
             <div>
               <label className="text-xs text-muted-foreground">Industry</label>
-              <p className="text-sm font-medium mt-0.5">Trade & Commerce</p>
+              <p className="text-sm font-medium mt-0.5">Tourism & Hospitality</p>
             </div>
             <div>
               <label className="text-xs text-muted-foreground">Timezone</label>

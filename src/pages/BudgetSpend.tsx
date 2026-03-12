@@ -22,11 +22,11 @@ const allocations = [
 
 const transactions = [
   { id: "TXN-2841", desc: "Facebook — Coffee Week Boost", amount: "ETB 12,500", date: "Feb 18, 2026", status: "Completed" },
-  { id: "TXN-2840", desc: "Google Ads — Trade Fair Keywords", amount: "ETB 8,200", date: "Feb 17, 2026", status: "Completed" },
+  { id: "TXN-2840", desc: "Google Ads — Visit Ethiopia Keywords", amount: "ETB 8,200", date: "Feb 17, 2026", status: "Completed" },
   { id: "TXN-2839", desc: "Telegram — Channel Promo", amount: "ETB 3,800", date: "Feb 16, 2026", status: "Completed" },
-  { id: "TXN-2838", desc: "LinkedIn — Member Spotlight", amount: "ETB 6,100", date: "Feb 15, 2026", status: "Completed" },
+  { id: "TXN-2838", desc: "LinkedIn — Destination Spotlight", amount: "ETB 6,100", date: "Feb 15, 2026", status: "Completed" },
   { id: "TXN-2837", desc: "Print — Addis Fortune Half Page", amount: "ETB 15,000", date: "Feb 14, 2026", status: "Pending" },
-  { id: "TXN-2836", desc: "Video Production — Export Policy", amount: "ETB 22,000", date: "Feb 12, 2026", status: "Processing" },
+  { id: "TXN-2836", desc: "Video Production — Tourism Policy", amount: "ETB 22,000", date: "Feb 12, 2026", status: "Processing" },
 ];
 
 const fmt = (n: number) => `ETB ${(n / 1000).toFixed(0)}K`;

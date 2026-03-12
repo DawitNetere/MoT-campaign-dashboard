@@ -6,7 +6,7 @@ const insights = [
     title: "Telegram Spike",
     description: (
       <>
-        Engagement has spiked <span className="text-success font-bold">15%</span> since the trade fair announcement. Consider posting a follow-up poll today.
+        Engagement has spiked <span className="text-success font-bold">15%</span> since the Visit Ethiopia 2026 announcement. Consider posting a follow-up poll today.
       </>
     ),
   },

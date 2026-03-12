@@ -11,10 +11,10 @@ import postNewsletter from "@/assets/post-newsletter.jpg";
 
 const posts = [
   { id: 1, title: "Ethiopian Coffee Week Campaign", platform: "Facebook", status: "Published", date: "Feb 18, 2026", reach: "12.4K", engagement: "3.2%", image: postCoffee },
-  { id: 2, title: "Trade Fair 2026 — Early Bird Registration", platform: "Telegram", status: "Scheduled", date: "Feb 22, 2026", reach: "—", engagement: "—", image: postTradefair },
-  { id: 3, title: "Member Spotlight: Anbessa Shoes", platform: "LinkedIn", status: "Published", date: "Feb 15, 2026", reach: "8.7K", engagement: "4.1%", image: postShoes },
-  { id: 4, title: "New Export Policy Explainer", platform: "YouTube", status: "Draft", date: "—", reach: "—", engagement: "—", image: postPolicy },
-  { id: 5, title: "Women in Business Forum Recap", platform: "Instagram", status: "Published", date: "Feb 12, 2026", reach: "15.1K", engagement: "5.8%", image: postWomen },
+  { id: 2, title: "Visit Ethiopia 2026 — Early Bird Promotion", platform: "Telegram", status: "Scheduled", date: "Feb 22, 2026", reach: "—", engagement: "—", image: postTradefair },
+  { id: 3, title: "Destination Spotlight: Lalibela Rock Churches", platform: "LinkedIn", status: "Published", date: "Feb 15, 2026", reach: "8.7K", engagement: "4.1%", image: postShoes },
+  { id: 4, title: "New Tourism Policy Explainer", platform: "YouTube", status: "Draft", date: "—", reach: "—", engagement: "—", image: postPolicy },
+  { id: 5, title: "Women in Tourism Forum Recap", platform: "Instagram", status: "Published", date: "Feb 12, 2026", reach: "15.1K", engagement: "5.8%", image: postWomen },
   { id: 6, title: "Monthly Newsletter — February Issue", platform: "Email", status: "Scheduled", date: "Feb 25, 2026", reach: "—", engagement: "—", image: postNewsletter },
 ];
 

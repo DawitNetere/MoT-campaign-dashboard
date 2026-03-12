@@ -29,7 +29,7 @@ export function generateQ1Report() {
   doc.setFontSize(9);
   doc.setFont("helvetica", "normal");
   doc.setTextColor(71, 85, 105);
-  const summary = `This report provides a comprehensive overview of the Ministry of Tourism's digital marketing performance during Q1 2026. Overall engagement grew 23.4% compared to Q4 2025, driven primarily by the Ethiopian Coffee Week campaign and increased Telegram activity. Total reach across all platforms exceeded 1.2 million impressions, with a blended engagement rate of 4.7%. Budget utilization stands at 68% of the quarterly allocation, on track for full deployment by quarter-end.`;
+  const summary = `This report provides a comprehensive overview of the Ministry of Tourism's digital marketing performance during Q1 2026. Overall engagement grew 23.4% compared to Q4 2025, driven primarily by the Ethiopian Coffee Week campaign and increased Telegram activity around the Visit Ethiopia 2026 promotion. Total reach across all platforms exceeded 1.2 million impressions, with a blended engagement rate of 4.7%. Budget utilization stands at 68% of the quarterly allocation, on track for full deployment by quarter-end.`;
   const lines = doc.splitTextToSize(summary, pageWidth - 28);
   doc.text(lines, 14, y);
   y += lines.length * 4.5 + 6;
@@ -75,7 +75,7 @@ export function generateQ1Report() {
     body: [
       ["Facebook", "14", "387,200", "3.9%", "4,120", "Coffee Week Launch"],
       ["Telegram", "12", "298,500", "6.1%", "6,340", "Trade Fair Registration"],
-      ["LinkedIn", "8", "156,800", "4.2%", "2,890", "Member Spotlight: Anbessa"],
+      ["LinkedIn", "8", "156,800", "4.2%", "2,890", "Destination Spotlight: Lalibela"],
       ["Instagram", "7", "245,100", "5.8%", "3,470", "Women in Business Recap"],
       ["YouTube", "3", "89,400", "3.1%", "780", "Export Policy Explainer"],
       ["Email", "3", "70,300", "34.2% open", "820", "February Newsletter"],
@@ -101,10 +101,10 @@ export function generateQ1Report() {
     head: [["Campaign", "Platform", "Reach", "Eng. Rate", "Conversions", "Cost (ETB)", "CPA (ETB)"]],
     body: [
       ["Ethiopian Coffee Week", "Multi", "312,400", "5.2%", "1,840", "45,000", "24.46"],
-      ["Trade Fair 2026 Early Bird", "Telegram", "178,600", "7.8%", "2,340", "28,000", "11.97"],
-      ["Women in Business Forum", "Instagram", "156,200", "5.8%", "890", "22,000", "24.72"],
-      ["Member Spotlight Series", "LinkedIn", "98,700", "4.1%", "420", "12,000", "28.57"],
-      ["New Export Policy Explainer", "YouTube", "89,400", "3.1%", "310", "35,000", "112.90"],
+      ["Visit Ethiopia 2026 Early Bird", "Telegram", "178,600", "7.8%", "2,340", "28,000", "11.97"],
+      ["Women in Tourism Forum", "Instagram", "156,200", "5.8%", "890", "22,000", "24.72"],
+      ["Destination Spotlight Series", "LinkedIn", "98,700", "4.1%", "420", "12,000", "28.57"],
+      ["New Tourism Policy Explainer", "YouTube", "89,400", "3.1%", "310", "35,000", "112.90"],
       ["Monthly Newsletter — Jan", "Email", "42,100", "34.2% open", "680", "5,000", "7.35"],
       ["Monthly Newsletter — Feb", "Email", "38,200", "31.8% open", "540", "5,000", "9.26"],
     ],
@@ -154,11 +154,11 @@ export function generateQ1Report() {
     startY: y,
     head: [["Segment", "Percentage", "Growth vs Q4", "Primary Platform"]],
     body: [
-      ["Business Owners (25-44)", "38%", "+3.2%", "Telegram"],
-      ["Corporate Executives (35-55)", "22%", "+1.8%", "LinkedIn"],
-      ["Young Entrepreneurs (18-30)", "19%", "+5.4%", "Instagram"],
+      ["Travelers & Tourists (25-44)", "38%", "+3.2%", "Telegram"],
+      ["Travel Industry Professionals (35-55)", "22%", "+1.8%", "LinkedIn"],
+      ["Young Travelers (18-30)", "19%", "+5.4%", "Instagram"],
       ["Government & Policy Makers", "11%", "+0.9%", "Facebook"],
-      ["International Partners", "6%", "+2.1%", "LinkedIn"],
+      ["International Tour Operators", "6%", "+2.1%", "LinkedIn"],
       ["Students & Academics", "4%", "+1.6%", "YouTube"],
     ],
     styles: { fontSize: 9, cellPadding: 3 },
@@ -181,10 +181,10 @@ export function generateQ1Report() {
   const recs = [
     "1. Increase Telegram investment by 25% — highest engagement rate (6.1%) and fastest follower growth across all platforms.",
     "2. Launch a dedicated Instagram Reels strategy — short-form video content drove 44% more views than Q4; capitalize on this momentum.",
-    "3. Develop a member-generated content program — the Anbessa Shoes spotlight achieved 4.1% engagement, suggesting appetite for peer stories.",
+    "3. Develop a destination-generated content program — the Lalibela spotlight achieved 4.1% engagement, suggesting appetite for destination stories.",
     "4. Optimize email send times — A/B testing in January showed 18% higher open rates for Tuesday 10 AM sends vs. Thursday sends.",
-    "5. Allocate remaining event promotion budget to Trade Fair 2026 push — early bird registrations exceeded target by 17%.",
-    "6. Consider LinkedIn Ads for B2B lead generation targeting international partners segment, which grew 2.1% organically.",
+    "5. Allocate remaining event promotion budget to Visit Ethiopia 2026 push — early bird registrations exceeded target by 17%.",
+    "6. Consider LinkedIn Ads for B2B lead generation targeting international tour operators segment, which grew 2.1% organically.",
   ];
 
   recs.forEach((rec) => {

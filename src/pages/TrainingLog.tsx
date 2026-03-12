@@ -5,11 +5,11 @@ import { Progress } from "@/components/ui/progress";
 
 const courses = [
   { title: "Facebook Ads Fundamentals", progress: 100, status: "Completed", date: "Jan 20, 2026", duration: "4h 30m" },
-  { title: "Content Strategy for Chambers", progress: 72, status: "In Progress", date: "Feb 10, 2026", duration: "3h 15m" },
+  { title: "Content Strategy for Tourism Boards", progress: 72, status: "In Progress", date: "Feb 10, 2026", duration: "3h 15m" },
   { title: "Telegram Marketing Masterclass", progress: 45, status: "In Progress", date: "Feb 14, 2026", duration: "2h 00m" },
-  { title: "Google Analytics for Nonprofits", progress: 100, status: "Completed", date: "Dec 15, 2025", duration: "5h 45m" },
+  { title: "Google Analytics for Government Agencies", progress: 100, status: "Completed", date: "Dec 15, 2025", duration: "5h 45m" },
   { title: "Video Production Basics", progress: 18, status: "In Progress", date: "Feb 18, 2026", duration: "0h 50m" },
-  { title: "SEO for Trade Organizations", progress: 0, status: "Not Started", date: "—", duration: "—" },
+  { title: "SEO for Tourism Destinations", progress: 0, status: "Not Started", date: "—", duration: "—" },
 ];
 
 const team = [
